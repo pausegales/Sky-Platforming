@@ -16,7 +16,7 @@ public class collide : MonoBehaviour
     }
 
     private void OnTriggerEnter (Collider other){
-        if (other.CompareTag("Island")){
+        if (other.CompareTag("Island") || other.CompareTag("Platform")){
             movement_script.movementDirection = -movement_script.movementDirection;
         }
     }
