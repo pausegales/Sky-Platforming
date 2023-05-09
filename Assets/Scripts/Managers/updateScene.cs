@@ -6,12 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class updateScene : MonoBehaviour
 {
-    public int scene;
 
     void Update(){
         if (Input.anyKeyDown)
         {
-            switch(scene) {
+            switch(gameSettings.current_scene) {
                 case 0:
                     SceneManager.LoadScene("Level1"); 
                     break;
@@ -31,8 +30,8 @@ public class updateScene : MonoBehaviour
                     SceneManager.LoadScene("Scene"); 
                     break;
                 }
-                scene++;
-                scene = scene%5;
+                gameSettings.current_scene++;
+                gameSettings.current_scene = gameSettings.current_scene%6;
         }
     }
 }
