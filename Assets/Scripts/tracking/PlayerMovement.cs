@@ -20,8 +20,8 @@ public class PlayerMovement : MonoBehaviour
     public void setPosition(Vector3 pos)
     {
         //swith playerIndex
-        //transform.position = pos;
+        transform.position = pos;
         //transform.position = new Vector3(pos.x, transform.position.y, pos.z);
-        transform.position = new Vector3(pos.x, 5, pos.z);
+        //transform.position = new Vector3(pos.x, 5, pos.z);
     }
 }
