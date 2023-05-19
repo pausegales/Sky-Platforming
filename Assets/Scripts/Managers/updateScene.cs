@@ -10,6 +10,9 @@ public class updateScene : MonoBehaviour
     void Update(){
         if (Input.anyKeyDown)
         {
+            gameSettings.current_scene = gameSettings.current_scene + 1;
+            gameSettings.current_scene = gameSettings.current_scene%6;
+            
             switch(gameSettings.current_scene) {
                 case 0:
                     SceneManager.LoadScene("Level1"); 
@@ -30,8 +33,6 @@ public class updateScene : MonoBehaviour
                     SceneManager.LoadScene("Scene"); 
                     break;
                 }
-                gameSettings.current_scene++;
-                gameSettings.current_scene = gameSettings.current_scene%6;
         }
     }
 }

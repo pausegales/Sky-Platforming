@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class movement : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class movement : MonoBehaviour
 
     private void Start()
     {
+        print(SceneManager.sceneCount);
+
     }
 
     private void Update()
