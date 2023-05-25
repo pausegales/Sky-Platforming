@@ -5,9 +5,10 @@ using UnityEngine;
 public class pressButton : MonoBehaviour
 {
     public GameObject platformToActivate;
-    
+    public int speed;
     public Space space;
     private bool isPressed = false;
+    
     private Vector3 pressed;
     private Vector3 unpressed;
     
@@ -24,7 +25,7 @@ public class pressButton : MonoBehaviour
     {
         if(isPressed){
             transform.localPosition = pressed;
-            platformToActivate.GetComponent<movement>().movementSpeed = 10;
+            platformToActivate.GetComponent<movement>().movementSpeed = speed;
         }
         else{
             transform.localPosition = unpressed;
