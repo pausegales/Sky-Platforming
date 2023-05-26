@@ -9,6 +9,10 @@ TagManager:
   - Island
   - Platform
   - Button
+  - Player1
+  - Player2
+  - Button1
+  - Button2
   layers:
   - Default
   - TransparentFX
