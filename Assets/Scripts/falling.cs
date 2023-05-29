@@ -19,6 +19,8 @@ public class falling : MonoBehaviour
             planes_reference.SetActive(false);
             objects_reference.SetActive(false);
             cameras.GetComponent<falling_camera>().falling = true;
+            cameras.GetComponent<falling_camera>().playing = false;
+
          }
     }
 }
