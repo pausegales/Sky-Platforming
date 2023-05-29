@@ -5,6 +5,11 @@ using UnityEngine;
 public class falling : MonoBehaviour
 {
     public GameObject planes_reference;
+    public GameObject objects_reference;
+    
+    public GameObject cameras;
+    public GameObject player;
+    
     
     private void OnCollisionEnter(Collision collision)
     {
@@ -12,6 +17,8 @@ public class falling : MonoBehaviour
         {
             // Disable the platform
             planes_reference.SetActive(false);
-        }
+            objects_reference.SetActive(false);
+            cameras.GetComponent<falling_camera>().falling = true;
+         }
     }
 }
