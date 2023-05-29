@@ -7,9 +7,10 @@ public class pressButton : MonoBehaviour
     public GameObject platformToActivate;
     public int speed;
     public int player_selected;
-    public Space space;
-    
-    private string player;
+    public bool both_press;
+        
+    private string player1;
+    private string player2;
     private bool isPressed = false;
     private Vector3 pressed;
     private Vector3 unpressed;
@@ -22,9 +23,16 @@ public class pressButton : MonoBehaviour
         unpressed = new Vector3(0.0f, 0.0f, 0.0f);
         
         if (player_selected == 1){
-            player =  "Player1";
-        }else{
-            player = "Player2";
+            player1 =  "Player1";
+            player2 =  "Player1";
+        }
+        if (player_selected == 2){
+            player1 =  "Player2";
+            player2 =  "Player2";
+        }
+        if (player_selected == 0){
+            player1 =  "Player1";
+            player2 =  "Player2";
         }
         
     }
@@ -40,23 +48,17 @@ public class pressButton : MonoBehaviour
             transform.localPosition = unpressed;
             platformToActivate.GetComponent<movement>().movementSpeed = 0;
         };
-        
     }
 
     private void OnTriggerEnter (Collider other){
-        if ( other.CompareTag(player) && !isPressed){
+        if ( (other.CompareTag(player1) || other.CompareTag(player2)) && !isPressed){
             isPressed = true;
         }
     }
     
     private void OnTriggerExit (Collider other){
-        if ( other.CompareTag(player) && isPressed){
+        if ( (other.CompareTag(player1) || other.CompareTag(player2)) && isPressed){
             isPressed = false;
         }
-        
     }
-        
-    
-
-
 }
