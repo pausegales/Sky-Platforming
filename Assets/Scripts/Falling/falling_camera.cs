@@ -21,7 +21,7 @@ public class falling_camera : MonoBehaviour
         if (falling){
             transform.position = new Vector3(0f, player.transform.position.y + 54.0f, 0f);
             if (transform.position.y < -140.0f){
-                SceneManager.LoadScene("Level1"); //Load scene called Game
+                SceneManager.LoadScene("EndScene"); //Load scene called Game
                 
             }
         }
