@@ -17,12 +17,20 @@ public class PlayerMovement : MonoBehaviour
     {
     }
 
+    // player_pos = -23
+    // cube_pos_world = -12
+    //
+    //if pos.y > -22
+    //      float jump_pos = pos.y + 11;
+    
     public void setPosition(Vector3 pos)
     {
         transform.position = new Vector3(pos.x, transform.position.y, pos.z);
         
         if ( pos.y > jumpThreshold ){
-            new Vector3(transform.position.x, pos.y, transform.position.z);
+            
+            transform.position = new Vector3(transform.position.x, pos.y + 11, transform.position.z);
+
         }
         
         //swith playerIndex

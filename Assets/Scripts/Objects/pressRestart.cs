@@ -31,4 +31,13 @@ public class pressRestart : MonoBehaviour
            p2 = true;
         }
     }
+    
+    private void OnTriggerExit (Collider other){
+        if (other.CompareTag("Player1")){
+            p1 = false;
+        }
+        if (other.CompareTag("Player2")){
+           p2 = false;
+        }
+    }
 }
