@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
         
         if ( pos.y > jumpThreshold ){
             
-            transform.position = new Vector3(transform.position.x, pos.y + 11, transform.position.z);
+            transform.position = new Vector3(pos.x, transform.position.y + 5, pos.z);
 
         }
         
