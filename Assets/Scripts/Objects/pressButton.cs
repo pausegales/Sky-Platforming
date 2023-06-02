@@ -8,6 +8,7 @@ public class pressButton : MonoBehaviour
     public int speed;
     public int player_selected;
     public bool both_press;
+    public AudioSource source;
         
     private string player1;
     private string player2;
@@ -53,6 +54,7 @@ public class pressButton : MonoBehaviour
     private void OnTriggerEnter (Collider other){
         if ( (other.CompareTag(player1) || other.CompareTag(player2)) && !isPressed){
             isPressed = true;
+            source.Play();
         }
     }
     
