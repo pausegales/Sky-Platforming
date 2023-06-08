@@ -12,9 +12,13 @@ public class pressButton : MonoBehaviour
         
     private string player1;
     private string player2;
+    
     private bool isPressed = false;
     private Vector3 pressed;
     private Vector3 unpressed;
+    
+    private bool p1;
+    private bool p2;
     
 
     // Start is called before the first frame update
@@ -41,14 +45,28 @@ public class pressButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isPressed){
-            transform.localPosition = pressed;
-            platformToActivate.GetComponent<movement>().movementSpeed = speed;
+        if (!both_press){
+            if(isPressed){
+                transform.localPosition = pressed;
+                platformToActivate.GetComponent<movement>().movementSpeed = speed;
+            }
+            else{
+                transform.localPosition = unpressed;
+                platformToActivate.GetComponent<movement>().movementSpeed = 0;
+            };
         }
-        else{
-            transform.localPosition = unpressed;
-            platformToActivate.GetComponent<movement>().movementSpeed = 0;
-        };
+        if (both_press){
+            if(isPressed && p1 && p2){
+                transform.localPosition = pressed;
+                platformToActivate.GetComponent<movement>().movementSpeed = speed;
+            }
+            else{
+                transform.localPosition = unpressed;
+                platformToActivate.GetComponent<movement>().movementSpeed = 0;
+            };
+        }
+        
+        
     }
 
     private void OnTriggerEnter (Collider other){
@@ -56,11 +74,26 @@ public class pressButton : MonoBehaviour
             isPressed = true;
             source.Play();
         }
+        if (other.CompareTag("Player1")){
+            p1 = true;
+        }
+        if (other.CompareTag("Player2")){
+            p2 = true;
+        }
+        
+        
+        
     }
     
     private void OnTriggerExit (Collider other){
         if ( (other.CompareTag(player1) || other.CompareTag(player2)) && isPressed){
             isPressed = false;
+        }
+        if (other.CompareTag("Player1")){
+            p1 = false;
+        }
+        if (other.CompareTag("Player2")){
+            p2 = false;
         }
     }
 }
