@@ -9,7 +9,6 @@ public static class gameSettings
     void Update(){
         
         if (SceneManager.GetActiveScene().name == "Level1"){
-            
         }
     }
 }
