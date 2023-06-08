@@ -40,12 +40,30 @@ public class movement : MonoBehaviour
             //Check if object reached boundaries
             if (transform.position.x >= boundaryx_up || transform.position.x <= boundaryx_dw)
             {
+//                Vector3 pos = new Vector3(0,transform.position.y,transform.position.z);
+//                if ( transform.position.x >= boundaryx_up ) {
+//                    pos.x = boundaryx_up - 2;
+//                    transform.position = pos;
+//                }
+//                if ( transform.position.x <= boundaryx_dw ) {
+//                    pos.x = boundaryx_dw + 2;
+//                    transform.position = pos;
+//                }
                 //Change movement direction
                 movementDirection.x = -movementDirection.x;
             }
             
             if (transform.position.z >= boundaryy_up || transform.position.z <= boundaryy_dw)
             {
+//                Vector3 pos = new Vector3(transform.position.x, transform.position.y,0);
+//                if ( transform.position.z >= boundaryy_up ) {
+//                    pos.z = boundaryy_up - 2;
+//                    transform.position = pos;
+//                }
+//                if ( transform.position.z <= boundaryy_dw ) {
+//                    pos.z = boundaryy_dw + 2;
+//                    transform.position = pos;
+//                }
                 //Change movement direction
                 movementDirection.z = -movementDirection.z;
             }
@@ -58,12 +76,30 @@ public class movement : MonoBehaviour
             //Check if object reached boundaries
             if (transform.position.x >= boundaryx_up || transform.position.x <= boundaryx_dw)
             {
+//                Vector3 pos = new Vector3(0,transform.position.y,transform.position.z);
+//                if ( transform.position.x >= boundaryx_up ) {
+//                    pos.x = boundaryx_up - 2;
+//                    transform.position = pos;
+//                }
+//                if ( transform.position.x <= boundaryx_dw ) {
+//                    pos.x = boundaryx_dw + 2;
+//                    transform.position = pos;
+//                }
                 //Change movement direction
                 movementDirection.x = -movementDirection.x;
             }
             
             if (transform.position.z >= boundaryy_up || transform.position.z <= boundaryy_dw)
             {
+//                Vector3 pos = new Vector3(transform.position.x, transform.position.y,0);
+//                if ( transform.position.z >= boundaryy_up ) {
+//                    pos.z = boundaryy_up - 2;
+//                    transform.position = pos;
+//                }
+//                if ( transform.position.z <= boundaryy_dw ) {
+//                    pos.z = boundaryy_dw + 2;
+//                    transform.position = pos;
+//                }
                 //Change movement direction
                 movementDirection.z = -movementDirection.z;
             }
