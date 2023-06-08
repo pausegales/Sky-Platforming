@@ -4,6 +4,12 @@ using UnityEngine;
 
 public static class gameSettings
 {
-    public static int current_scene = 1;
+    //public int current_scene = 1;
     
+    void Update(){
+        
+        if (SceneManager.GetActiveScene().name == "Level1"){
+            
+        }
+    }
 }
