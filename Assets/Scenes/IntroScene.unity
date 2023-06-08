@@ -8034,6 +8034,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Start_button
       objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: 0ae31670d2d4f4884abc4859956b47d5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: 0ae31670d2d4f4884abc4859956b47d5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.28
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ae31670d2d4f4884abc4859956b47d5, type: 3}
 --- !u!1 &1699036598

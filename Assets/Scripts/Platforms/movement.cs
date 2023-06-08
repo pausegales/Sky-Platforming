@@ -6,10 +6,14 @@ public class movement : MonoBehaviour
     //References to the buttons that activates the platform
     public GameObject button1;
     public GameObject button2;
+    public GameObject button3;
+
+    
     
     //Booleans for storing if referenced button is pressed
     private bool b1_press;
     private bool b2_press;
+    private bool b3_press;
 
     //Platform variables
     public float movementSpeed;
@@ -26,9 +30,10 @@ public class movement : MonoBehaviour
         //Check if there is a button that has activated this platform
         b1_press = button1.GetComponent<pressButton>().active;
         b2_press = button2.GetComponent<pressButton>().active;
+        b3_press = button3.GetComponent<pressButton>().active;
         
         //General platform movement
-        if (b1_press || b2_press){
+        if (b1_press || b2_press || b3_press){
             transform.Translate(movementDirection * movementSpeed * Time.deltaTime, space);
             
             //Check if object reached boundaries
