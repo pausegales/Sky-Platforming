@@ -19,7 +19,7 @@ public class pressButton : MonoBehaviour
     
     private bool p1;
     private bool p2;
-    
+        
 
     // Start is called before the first frame update
     void Start()
