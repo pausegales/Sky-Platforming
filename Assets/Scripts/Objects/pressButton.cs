@@ -22,6 +22,8 @@ public class pressButton : MonoBehaviour
     private string player1;
     private string player2;
     
+    public bool active = false;
+    
     //Audio source for pressing effect
     public AudioSource source;
 
@@ -52,23 +54,27 @@ public class pressButton : MonoBehaviour
         if (!both_press){
             if(isPressed){
                 transform.localPosition = pressed;
-                platformToActivate.GetComponent<movement>().movementSpeed = speed;
+                //platformToActivate.GetComponent<movement>().movementSpeed = speed;
+                active = true;
                 source.Play();
             }
             else{
                 transform.localPosition = unpressed;
-                platformToActivate.GetComponent<movement>().movementSpeed = 0;
+                //platformToActivate.GetComponent<movement>().movementSpeed = 0;
+                active = false;
             };
         }
         if (both_press){
             if(isPressed && p1 && p2){
                 transform.localPosition = pressed;
-                platformToActivate.GetComponent<movement>().movementSpeed = speed;
+                //platformToActivate.GetComponent<movement>().movementSpeed = speed;
+                active = true;
                 source.Play();
             }
             else{
                 transform.localPosition = unpressed;
-                platformToActivate.GetComponent<movement>().movementSpeed = 0;
+                //platformToActivate.GetComponent<movement>().movementSpeed = 0;
+                active = false;
             };
         }
     }
