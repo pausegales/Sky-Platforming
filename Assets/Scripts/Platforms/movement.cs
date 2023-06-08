@@ -8,8 +8,6 @@ public class movement : MonoBehaviour
     public GameObject button2;
     public GameObject button3;
 
-    
-    
     //Booleans for storing if referenced button is pressed
     private bool b1_press;
     private bool b2_press;
