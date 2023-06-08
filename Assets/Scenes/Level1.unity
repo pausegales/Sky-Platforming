@@ -1362,7 +1362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button1: {fileID: 805960294}
   button2: {fileID: 1336442299}
-  button3: {fileID: 0}
+  button3: {fileID: 1336442299}
   movementSpeed: 0
   boundaryx_up: 0
   boundaryx_dw: 0
@@ -1370,6 +1370,7 @@ MonoBehaviour:
   boundaryy_dw: 0
   space: 1
   movementDirection: {x: 0, y: 0, z: 0}
+  independent_move: 0
 --- !u!65 &134301382
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2742,13 +2743,14 @@ MonoBehaviour:
   button1: {fileID: 2110604446}
   button2: {fileID: 2110604446}
   button3: {fileID: 1494433016}
-  movementSpeed: 10
-  boundaryx_up: 0
-  boundaryx_dw: 0
-  boundaryy_up: 70
-  boundaryy_dw: 25
+  movementSpeed: 6
+  boundaryx_up: 80
+  boundaryx_dw: 50
+  boundaryy_up: 0
+  boundaryy_dw: 0
   space: 0
-  movementDirection: {x: 0, y: 0, z: 1}
+  movementDirection: {x: 1, y: 0, z: 0}
+  independent_move: 0
 --- !u!65 &335042684
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3496,11 +3498,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c02556561c1a47339364d9e0ee459dc, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1000
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c02556561c1a47339364d9e0ee459dc, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1000
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c02556561c1a47339364d9e0ee459dc, type: 3}
       propertyPath: m_LocalScale.z
@@ -3508,7 +3510,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c02556561c1a47339364d9e0ee459dc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.8
+      value: 13.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c02556561c1a47339364d9e0ee459dc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3516,7 +3518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c02556561c1a47339364d9e0ee459dc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.5
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c02556561c1a47339364d9e0ee459dc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6444,7 +6446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c02556561c1a47339364d9e0ee459dc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.9
+      value: -26.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c02556561c1a47339364d9e0ee459dc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6513,13 +6515,14 @@ MonoBehaviour:
   button1: {fileID: 456710345}
   button2: {fileID: 456710345}
   button3: {fileID: 456710345}
-  movementSpeed: 15
-  boundaryx_up: 0
-  boundaryx_dw: 0
-  boundaryy_up: 85
-  boundaryy_dw: 25
+  movementSpeed: 6
+  boundaryx_up: 80
+  boundaryx_dw: 50
+  boundaryy_up: 0
+  boundaryy_dw: 0
   space: 0
-  movementDirection: {x: 0, y: 0, z: 1}
+  movementDirection: {x: 1, y: 0, z: 0}
+  independent_move: 0
 --- !u!114 &959759624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7381,8 +7384,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1121588946}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.00286, y: -0.003, z: 0.01}
-  m_LocalScale: {x: 0.001, y: 0.0049999985, z: 0.0009999998}
+  m_LocalPosition: {x: 0.004766677, y: -0.0049999976, z: 0.01}
+  m_LocalScale: {x: 0.0016666666, y: 0.0049999985, z: 0.0016666662}
   m_Children:
   - {fileID: 321948853}
   - {fileID: 456710346}
@@ -7551,7 +7554,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1180331939}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7563,7 +7566,7 @@ Transform:
   - {fileID: 1242427926}
   m_Father: {fileID: 600234113}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1001 &1182120972
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7852,12 +7855,13 @@ MonoBehaviour:
   button2: {fileID: 339922965}
   button3: {fileID: 339922965}
   movementSpeed: 8
-  boundaryx_up: 100
-  boundaryx_dw: 60
-  boundaryy_up: 100
-  boundaryy_dw: 60
+  boundaryx_up: 80
+  boundaryx_dw: 38
+  boundaryy_up: 80
+  boundaryy_dw: 40
   space: 0
   movementDirection: {x: 1, y: 0, z: 1}
+  independent_move: 0
 --- !u!1001 &1243028251
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8996,7 +9000,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 893099cddddc5b445885099910df7c32, type: 2}
+  - {fileID: 2100000, guid: d97a650110d8e43898bafc881a3d1200, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9034,7 +9038,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1440896347}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 72.1, y: 11.03, z: 7.8}
+  m_LocalPosition: {x: 88.7, y: 11.03, z: 7.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1563017567}
@@ -9560,7 +9564,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a7b03a207290de447b624608f4a560b7, type: 2}
+  - {fileID: 2100000, guid: cefbdf52bba484ea5a62524a146d46d1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9598,7 +9602,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471923275}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 30.8, y: 10.49, z: 46.8}
+  m_LocalPosition: {x: 89.6, y: 10.49, z: 46.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1563017567}
