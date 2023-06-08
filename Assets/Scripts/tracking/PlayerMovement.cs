@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     
     [SerializeField] int playerIndex;
     // Start is called before the first frame update
+    
     void Start()
     {
     }
@@ -17,11 +18,6 @@ public class PlayerMovement : MonoBehaviour
     {
     }
 
-    // player_pos = -23
-    // cube_pos_world = -12
-    //
-    //if pos.y > -22
-    //      float jump_pos = pos.y + 11;
     
     public void setPosition(Vector3 pos)
     {
@@ -30,13 +26,6 @@ public class PlayerMovement : MonoBehaviour
         //if ( pos.y > jumpThreshold ){
         //    transform.position = new Vector3(pos.x, transform.position.y + 5, pos.z);
         //}
-        
-        //swith playerIndex
-        //transform.position = pos;
-        //transform.position.x = pos.x;
-        //transform.position.z = pos.z;
-        //transform.position = new Vector3(pos.x, 5, pos.z);
     }
-
 }
 

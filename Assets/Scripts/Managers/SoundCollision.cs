@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class SoundCollision : MonoBehaviour
 {
-    public static SoundCollision Instance; // 1
-
-    public AudioClip collisionClip; // 2
     
-    private Vector3 cameraPosition; // 5
+    public static SoundCollision Instance;
+
+    //Reference to the audio clip
+    public AudioClip collisionClip;
+    
+    private Vector3 cameraPosition;
 
     // Start is called before the first frame update
     void awake()
@@ -17,16 +19,10 @@ public class SoundCollision : MonoBehaviour
         cameraPosition = Camera.main.transform.position; // 2
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void PlaySound(AudioClip clip){ // 1
         AudioSource.PlayClipAtPoint(clip, cameraPosition); // 2
     }
-
+    
     public void PlayShootClip(){
         PlaySound(collisionClip);
     }
