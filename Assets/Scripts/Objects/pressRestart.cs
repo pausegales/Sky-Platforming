@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement; //So you can use SceneManager
 
 public class pressRestart : MonoBehaviour
 {
+    public bool restart_or_exit;
     
     private bool p1;
     private bool p2;
@@ -18,9 +19,13 @@ public class pressRestart : MonoBehaviour
     
     void Update()
     {
-        if (p1 && p2){
+        if (p1 && p2 && restart_or_exit){
             SceneManager.LoadScene("Level1"); //Load scene called Game
         }
+        if (p1 && p2 && !restart_or_exit){
+            Application.Quit(); //Quit Game
+        }
+        
     }
 
     private void OnTriggerEnter (Collider other){
