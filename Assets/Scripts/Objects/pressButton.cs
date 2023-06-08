@@ -9,13 +9,13 @@ public class pressButton : MonoBehaviour
     public int speed;
     
     //Button state and stuff
-    private bool isPressed = false;
+    public bool isPressed = false;
     private Vector3 pressed;
     private Vector3 unpressed;
     
     //Player stuff and manager for 2 players in the same button
     public int player_selected;
-    public bool both_press;
+    private bool both_press;
     private bool p1;
     private bool p2;
     //Variables to generailze code for different buttons and players
@@ -42,6 +42,7 @@ public class pressButton : MonoBehaviour
         if (player_selected == 0){
             player1 =  "Player1";
             player2 =  "Player2";
+            both_press = true;
         }
     }
 
