@@ -201,6 +201,33 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 50f480ff2b34348f9907fa7fe5e8a93e, type: 3}
   m_PrefabInstance: {fileID: 16471553}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &16471555 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 50f480ff2b34348f9907fa7fe5e8a93e, type: 3}
+  m_PrefabInstance: {fileID: 16471553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &16471556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16471555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f015ffc75a2584919a45a3542c3ca4fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 2100774719}
+  button2: {fileID: 2100774719}
+  button3: {fileID: 2100774719}
+  movementSpeed: 10
+  boundaryx_up: 100
+  boundaryx_dw: 0
+  boundaryy_up: 100
+  boundaryy_dw: 0
+  space: 0
+  movementDirection: {x: 0, y: 0, z: 1}
 --- !u!1 &16883532
 GameObject:
   m_ObjectHideFlags: 0
@@ -3285,6 +3312,33 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7c02556561c1a47339364d9e0ee459dc, type: 3}
   m_PrefabInstance: {fileID: 382455913}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &382455915 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7c02556561c1a47339364d9e0ee459dc, type: 3}
+  m_PrefabInstance: {fileID: 382455913}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &382455916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382455915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f015ffc75a2584919a45a3542c3ca4fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 326452847}
+  button2: {fileID: 1860084062}
+  button3: {fileID: 326452847}
+  movementSpeed: 10
+  boundaryx_up: 100
+  boundaryx_dw: 0
+  boundaryy_up: 100
+  boundaryy_dw: 0
+  space: 0
+  movementDirection: {x: 0, y: 0, z: 1}
 --- !u!1 &392176227
 GameObject:
   m_ObjectHideFlags: 0
@@ -4823,6 +4877,33 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7c02556561c1a47339364d9e0ee459dc, type: 3}
   m_PrefabInstance: {fileID: 637713193}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &637713195 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7c02556561c1a47339364d9e0ee459dc, type: 3}
+  m_PrefabInstance: {fileID: 637713193}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &637713196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637713195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f015ffc75a2584919a45a3542c3ca4fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 280673732}
+  button2: {fileID: 280673732}
+  button3: {fileID: 280673732}
+  movementSpeed: 10
+  boundaryx_up: 100
+  boundaryx_dw: 0
+  boundaryy_up: 100
+  boundaryy_dw: 0
+  space: 0
+  movementDirection: {x: 1, y: 0, z: 0}
 --- !u!1 &666773754
 GameObject:
   m_ObjectHideFlags: 0
@@ -6661,6 +6742,33 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 50f480ff2b34348f9907fa7fe5e8a93e, type: 3}
   m_PrefabInstance: {fileID: 947497010}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &947497012 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 50f480ff2b34348f9907fa7fe5e8a93e, type: 3}
+  m_PrefabInstance: {fileID: 947497010}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &947497013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947497012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f015ffc75a2584919a45a3542c3ca4fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 1904570737}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
+  movementSpeed: 10
+  boundaryx_up: 100
+  boundaryx_dw: 0
+  boundaryy_up: 100
+  boundaryy_dw: 0
+  space: 0
+  movementDirection: {x: 1, y: 0, z: 0}
 --- !u!1 &956179177
 GameObject:
   m_ObjectHideFlags: 0
@@ -7654,7 +7762,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ff8e8fb88e5ce45e7b95679979969648, type: 2}
     - target: {fileID: 919132149155446097, guid: 7c02556561c1a47339364d9e0ee459dc, type: 3}
       propertyPath: m_Name
-      value: P4
+      value: P4 - auto
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c02556561c1a47339364d9e0ee459dc, type: 3}
@@ -15316,7 +15424,7 @@ MonoBehaviour:
   platformToActivate: {fileID: 0}
   speed: 10
   isPressed: 0
-  player_selected: 2
+  player_selected: 0
   active: 0
   source: {fileID: 1021835195}
 --- !u!65 &2100774721
