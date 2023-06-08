@@ -9,7 +9,7 @@ public class pressButton : MonoBehaviour
     public int speed;
     
     //Button state and stuff
-    private bool isPressed = false;
+    public bool isPressed = false;
     private Vector3 pressed;
     private Vector3 unpressed;
     
