@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//This script manages the change of color of the manager text buttons for giving an optical feedback to the interaction
 public class RestartPlat_ColorChange : MonoBehaviour
 {
     //Variable for changing the material on the script
@@ -33,7 +34,6 @@ public class RestartPlat_ColorChange : MonoBehaviour
         }
     }
     
-
     //Colliders
     private void OnTriggerEnter (Collider other){
         if (other.CompareTag("Player1")){
@@ -44,6 +44,7 @@ public class RestartPlat_ColorChange : MonoBehaviour
         }
     }
     
+    //Exit colliders
     private void OnTriggerExit (Collider other){
         if (other.CompareTag("Player1")){
             counter--;

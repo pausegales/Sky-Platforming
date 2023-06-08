@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//This script manages everithing that involves players pressing buttons (Apart from "JumpingScene buttons)
 public class pressButton : MonoBehaviour
 {
     //Platform stuff
@@ -30,9 +31,11 @@ public class pressButton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Init the button possitions for pressed and unpressed
         pressed = new Vector3(0.0f, -0.28f, 0.0f);
         unpressed = new Vector3(0.0f, 0.0f, 0.0f);
         
+        //Set the variables to the correct player for further use
         if (player_selected == 1){
             player1 =  "Player1";
             player2 =  "Player1";
@@ -51,6 +54,7 @@ public class pressButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Conditions when the button is set for 1 player
         if (!both_press){
             if(isPressed){
                 transform.localPosition = pressed;
@@ -62,6 +66,8 @@ public class pressButton : MonoBehaviour
                 active = false;
             };
         }
+        
+        //Conditions when the button is set for 2 player
         if (both_press){
             if(isPressed && p1 && p2){
                 transform.localPosition = pressed;
@@ -75,10 +81,12 @@ public class pressButton : MonoBehaviour
         }
     }
 
+    //Collider
     private void OnTriggerEnter (Collider other){
         if ( (other.CompareTag(player1) || other.CompareTag(player2)) && !isPressed){
             isPressed = true;
         }
+        //Conditions to later check if 2 players are pressing
         if (other.CompareTag("Player1")){
             p1 = true;
         }
@@ -87,10 +95,13 @@ public class pressButton : MonoBehaviour
         }
     }
     
+    //Exit collider
     private void OnTriggerExit (Collider other){
         if ( (other.CompareTag(player1) || other.CompareTag(player2)) && isPressed){
             isPressed = false;
         }
+        
+        //Conditions to later check if 2 players are pressing
         if (other.CompareTag("Player1")){
             p1 = false;
         }
