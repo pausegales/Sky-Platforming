@@ -26,7 +26,7 @@ public class nextLevel : MonoBehaviour
         {
             if (SceneManager.GetActiveScene().buildIndex < 4)
             {
-                //SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
+                SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
         

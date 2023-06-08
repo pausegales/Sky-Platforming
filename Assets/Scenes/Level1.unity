@@ -1460,13 +1460,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f015ffc75a2584919a45a3542c3ca4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 5
-  boundaryx_up: 100
-  boundaryx_dw: 60
-  boundaryy_up: 100
-  boundaryy_dw: 60
-  space: 0
-  movementDirection: {x: 1, y: 0, z: 1}
+  movementSpeed: 0
+  boundaryx_up: 0
+  boundaryx_dw: 0
+  boundaryy_up: 0
+  boundaryy_dw: 0
+  space: 1
+  movementDirection: {x: 0, y: 0, z: 0}
 --- !u!65 &134301382
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3589,6 +3589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformToActivate: {fileID: 959759620}
   speed: 10
+  isPressed: 0
   player_selected: 1
   both_press: 0
   source: {fileID: 1021835195}
@@ -5718,8 +5719,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformToActivate: {fileID: 1966805973}
   speed: 10
+  isPressed: 0
   player_selected: 1
-  both_press: 1
+  both_press: 0
   source: {fileID: 1021835195}
 --- !u!65 &805960296
 BoxCollider:
@@ -7221,6 +7223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformToActivate: {fileID: 1966805973}
   speed: 10
+  isPressed: 0
   player_selected: 0
   both_press: 1
   source: {fileID: 1021835195}
@@ -8336,8 +8339,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformToActivate: {fileID: 1966805973}
   speed: 10
+  isPressed: 0
   player_selected: 2
-  both_press: 1
+  both_press: 0
   source: {fileID: 1021835195}
 --- !u!65 &1336442301
 BoxCollider:
@@ -8775,7 +8779,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1440896347}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 53.8, y: 8, z: 50.1}
+  m_LocalPosition: {x: 62.04, y: 11.03, z: 89.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1563017567}
@@ -9339,7 +9343,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471923275}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 44.6, y: 8, z: 52.1}
+  m_LocalPosition: {x: 66.1, y: 10.49, z: 93.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1563017567}
@@ -9533,6 +9537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformToActivate: {fileID: 335042681}
   speed: 10
+  isPressed: 0
   player_selected: 2
   both_press: 0
   source: {fileID: 1021835195}
@@ -12990,6 +12995,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1997031354}
   - component: {fileID: 1997031353}
+  - component: {fileID: 1997031355}
   m_Layer: 0
   m_Name: SceneSettings
   m_TagString: Untagged
@@ -13028,6 +13034,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1997031355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997031352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcbdbe47968aa4ba2b50c7bea23c4076, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  final_button1: {fileID: 805960294}
+  final_button2: {fileID: 1336442299}
 --- !u!1001 &1998308187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14307,6 +14327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformToActivate: {fileID: 335042681}
   speed: 10
+  isPressed: 0
   player_selected: 2
   both_press: 0
   source: {fileID: 1021835195}
