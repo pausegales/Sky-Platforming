@@ -39,7 +39,6 @@ public class pressButton : MonoBehaviour
             player1 =  "Player1";
             player2 =  "Player2";
         }
-        
     }
 
     // Update is called once per frame
@@ -49,6 +48,7 @@ public class pressButton : MonoBehaviour
             if(isPressed){
                 transform.localPosition = pressed;
                 platformToActivate.GetComponent<movement>().movementSpeed = speed;
+                source.Play();
             }
             else{
                 transform.localPosition = unpressed;
@@ -59,20 +59,18 @@ public class pressButton : MonoBehaviour
             if(isPressed && p1 && p2){
                 transform.localPosition = pressed;
                 platformToActivate.GetComponent<movement>().movementSpeed = speed;
+                source.Play();
             }
             else{
                 transform.localPosition = unpressed;
                 platformToActivate.GetComponent<movement>().movementSpeed = 0;
             };
         }
-        
-        
     }
 
     private void OnTriggerEnter (Collider other){
         if ( (other.CompareTag(player1) || other.CompareTag(player2)) && !isPressed){
             isPressed = true;
-            source.Play();
         }
         if (other.CompareTag("Player1")){
             p1 = true;
@@ -80,9 +78,6 @@ public class pressButton : MonoBehaviour
         if (other.CompareTag("Player2")){
             p2 = true;
         }
-        
-        
-        
     }
     
     private void OnTriggerExit (Collider other){
