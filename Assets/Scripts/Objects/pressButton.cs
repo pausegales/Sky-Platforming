@@ -54,26 +54,22 @@ public class pressButton : MonoBehaviour
         if (!both_press){
             if(isPressed){
                 transform.localPosition = pressed;
-                //platformToActivate.GetComponent<movement>().movementSpeed = speed;
                 active = true;
                 source.Play();
             }
             else{
                 transform.localPosition = unpressed;
-                //platformToActivate.GetComponent<movement>().movementSpeed = 0;
                 active = false;
             };
         }
         if (both_press){
             if(isPressed && p1 && p2){
                 transform.localPosition = pressed;
-                //platformToActivate.GetComponent<movement>().movementSpeed = speed;
                 active = true;
                 source.Play();
             }
             else{
                 transform.localPosition = unpressed;
-                //platformToActivate.GetComponent<movement>().movementSpeed = 0;
                 active = false;
             };
         }
