@@ -13,10 +13,7 @@ public class nextLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Condition to jump scene with the keyboard (for testing)
-        if (Input.GetKeyDown(KeyCode.Space)){
-            SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
-        }
+        
         
         //Get if the referenced buttons are pressed or not
         bool b1 = final_button1.GetComponent<pressButton>().isPressed;
