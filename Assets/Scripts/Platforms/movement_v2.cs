@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class movement : MonoBehaviour
+public class movement_v2 : MonoBehaviour
 {
     //References to the buttons that activates the platform
     public GameObject button1;
