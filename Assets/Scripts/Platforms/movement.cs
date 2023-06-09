@@ -8,8 +8,6 @@ public class movement : MonoBehaviour
     public GameObject button2;
     public GameObject button3;
 
-    
-    
     //Booleans for storing if referenced button is pressed
     private bool b1_press;
     private bool b2_press;
@@ -51,7 +49,7 @@ public class movement : MonoBehaviour
             }
         }
         
-        //General platform movement
+        //General platform movement (conditioned to button)
         if ((b1_press || b2_press || b3_press) && !independent_move) {
             transform.Translate(movementDirection * movementSpeed * Time.deltaTime, space);
             
