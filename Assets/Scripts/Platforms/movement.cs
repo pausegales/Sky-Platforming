@@ -49,7 +49,7 @@ public class movement : MonoBehaviour
             }
         }
         
-        //General platform movement
+        //General platform movement (conditioned to button)
         if ((b1_press || b2_press || b3_press) && !independent_move) {
             transform.Translate(movementDirection * movementSpeed * Time.deltaTime, space);
             
