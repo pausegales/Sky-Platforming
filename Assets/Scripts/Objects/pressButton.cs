@@ -72,7 +72,7 @@ public class pressButton : MonoBehaviour
             if(isPressed && p1 && p2){
                 transform.localPosition = pressed;
                 active = true;
-                //source.Play();
+                source.Play();
             }
             else{
                 transform.localPosition = unpressed;

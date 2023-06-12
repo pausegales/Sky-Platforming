@@ -22,7 +22,7 @@ TagManager:
   - UI
   - BlendPlane0
   - BlendPlane1
-  - 
+  - Island
   - 
   - 
   - 
@@ -49,4 +49,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Island
+    uniqueID: 1724742785
     locked: 0
